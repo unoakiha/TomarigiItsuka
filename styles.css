@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-image: url("images/25946698.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+	color:#104197;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	color: #ffffff;
+	text-align: center;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 100px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 100px;
+	margin: 0;
+}
+
+p {
+	font-size: 60px;
+	font-weight: 500;
+	margin: 0;
+}
+
+section {
+  scroll-margin-top: 160px; /* 固定メニューバーの高さ分だけ余白を持たせる */
+}
+
+footer {
+	text-align: center;
+}
+
+.menuBar {
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  cursor: pointer;
+  position: fixed;       /* ←追加！ */
+  top: 0;                /* 画面上部に固定 */
+  left: 0;
+  z-index: 999;          /* 他の要素より上に表示 */
+}
+
+.disc {
+	font-size: 45px;
+}
+
+.banner {
+	max-width: 500px;
+}
+
+.jump {
+	font-size: 70px;
+}
+
+.pic1 {
+  display: block;
+  width: 60%;
+  margin-left: 0;
+  margin-right: auto;
+  transform: rotate(-5deg);
+  margin-bottom: 30px;
+}
+
+.pic2 {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: 0;
+  transform: rotate(5deg);
+  margin-bottom: 30px;
+}
+
+.pic1, .pic2 {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border: 8px solid white;
+  border-radius: 8px;
+}
+
+#nav-menu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  background-color: aquamarine;
+　width: 70%;
+}
+
+#nav-menu.open {
+  max-height: 500px; /* メニューの展開時の高さ（必要に応じて調整） */
+}
+
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-menu li {
+  margin: 10px 0;
+}
+
+#nav-menu a {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#hero {
+  padding-top: 160px; /* メニューバーの高さ分あける */
+}
+
+#hero img{
+	width: 100%;
+}
+
+#about {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#about img {
+	width: 100%;
+}
+
+#news {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#news img {
+	width: 100%;
+}
+
+#gallery {
+	text-align: center;
+}
